@@ -8,7 +8,7 @@ class SystemRebootNotifier {
 
   SystemRebootNotifier._internal();
 
-  void execute(Function task) {
+  void registerCallback(Function task) {
     const channel = MethodChannel('com.cheqplease.system_reboot_notifier/channel');
 
     channel.setMethodCallHandler((call) async {
