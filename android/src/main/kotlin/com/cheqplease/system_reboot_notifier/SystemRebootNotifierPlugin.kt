@@ -3,14 +3,11 @@ package com.cheqplease.system_reboot_notifier
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.widget.Toast
 import androidx.annotation.NonNull
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.dart.DartExecutor
 import io.flutter.embedding.engine.plugins.FlutterPlugin
-import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
-
 
 class SystemRebootNotifierPlugin : FlutterPlugin, BroadcastReceiver() {
     private lateinit var channel : MethodChannel
